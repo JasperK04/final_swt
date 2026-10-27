@@ -1,0 +1,19 @@
+Predicate (URI/Naam),Domain (Subject Class),Range (Object Class / Datatype),Uitleg / Richtlijn
+defeats,Character (of Hero),Character (of Villain),Wie verslaat of misleidt wie in het verhaal?
+appearsIn,Character,Story,Welk figuur komt voor in het verhaal?
+usesObject,Character,Object,Welk (magisch) voorwerp gebruikt een personage?
+hasLocation,Story / Character / Action,Location,Waar speelt het verhaal zich af?
+hasMotif,Story,xsd:string,Thompson Motif Index code (bijv. E235.2).
+hasTaleType,Story,xsd:string,AT / ATU code (bijv. ATU 0366).
+hasSubGenre,Story,xsd:string,"Bijv. sprookje, sage, mop."
+executesAction,Character,xsd:string,"Bijvoorbeeld: loopt, werkt, behekst"
+livesIn,Character,Location,"Groningen, "
+helps,Character,character (of Villain),
+findsObject,Character,Object,
+givesObject,Character,Object,
+transformsInto,Character,Character (of Villain),
+discoversLocation,Character,Location,
+hasEmotion,Character,Emotion,"sad, happy, angry"
+hasDescription,Character/Location/Item/Object,xsd:string ,"is loud, has many (...) "
+hasTime,Story / Action,Temporal ,"yesterday, tomorrow"
+hasEnding,Story,xsd:string,

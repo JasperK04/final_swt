@@ -1,0 +1,1397 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.org/verhalenbank/Ontologie#"
+     xml:base="http://example.org/verhalenbank/Ontologie"
+     xmlns:vb="http://example.org/verhalenbank/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://example.org/verhalenbank/Ontologie">
+        <rdfs:label xml:lang="nl">Ontologie van Nederlandse volksverhalen</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/verhalenbank/appearsIn -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/verhalenbank/appearsIn">
+        <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdfs:range rdf:resource="http://example.org/verhalenbank/Story"/>
+        <rdfs:label xml:lang="nl">karakter komt voor in verhaal</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/verhalenbank/defeats -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/verhalenbank/defeats">
+        <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdfs:range rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdfs:label xml:lang="nl">karakter verslaat of misleidt ander karakter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/verhalenbank/discoversLocation -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/verhalenbank/discoversLocation">
+        <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdfs:range rdf:resource="http://example.org/verhalenbank/Location"/>
+        <rdfs:label xml:lang="nl">karakter ontdekt locatie</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/verhalenbank/findsObject -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/verhalenbank/findsObject">
+        <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdfs:range rdf:resource="http://example.org/verhalenbank/Object"/>
+        <rdfs:label xml:lang="nl">karakter vindt voorwerp</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/verhalenbank/givesObject -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/verhalenbank/givesObject">
+        <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdfs:range rdf:resource="http://example.org/verhalenbank/Object"/>
+        <rdfs:label xml:lang="nl">karakter geeft voorwerp</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/verhalenbank/hasEmotion -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/verhalenbank/hasEmotion">
+        <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdfs:range rdf:resource="http://example.org/verhalenbank/Emotion"/>
+        <rdfs:label xml:lang="nl">karakter heeft emotie</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/verhalenbank/hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/verhalenbank/hasLocation">
+        <rdfs:range rdf:resource="http://example.org/verhalenbank/Location"/>
+        <rdfs:label xml:lang="nl">iets heeft locatie</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/verhalenbank/hasTime -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/verhalenbank/hasTime">
+        <rdfs:range rdf:resource="http://example.org/verhalenbank/Temporal"/>
+        <rdfs:label xml:lang="nl">iets heeft een tijdsaanduiding</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/verhalenbank/helps -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/verhalenbank/helps">
+        <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdfs:range rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdfs:label xml:lang="nl">karakter helpt karakter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/verhalenbank/livesIn -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/verhalenbank/livesIn">
+        <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdfs:range rdf:resource="http://example.org/verhalenbank/Location"/>
+        <rdfs:label xml:lang="nl">karakter woont in locatie</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/verhalenbank/transformsInto -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/verhalenbank/transformsInto">
+        <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdfs:range rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdfs:label xml:lang="nl">karakter verandert in karakter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/verhalenbank/usesObject -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/verhalenbank/usesObject">
+        <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdfs:range rdf:resource="http://example.org/verhalenbank/Object"/>
+        <rdfs:label xml:lang="nl">karakter gebruikt voorwerp</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/verhalenbank/executesAction -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/verhalenbank/executesAction">
+        <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="nl">karakter voert handeling uit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/verhalenbank/hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/verhalenbank/hasDescription">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="nl">iets heeft beschrijving</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/verhalenbank/hasEnding -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/verhalenbank/hasEnding">
+        <rdfs:domain rdf:resource="http://example.org/verhalenbank/Story"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="nl">verhaal heeft afloop</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/verhalenbank/hasMotif -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/verhalenbank/hasMotif">
+        <rdfs:domain rdf:resource="http://example.org/verhalenbank/Story"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="nl">verhaal heeft motief</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/verhalenbank/hasSubGenre -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/verhalenbank/hasSubGenre">
+        <rdfs:domain rdf:resource="http://example.org/verhalenbank/Story"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="nl">verhaal heeft subgenre</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/verhalenbank/hasTaleType -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/verhalenbank/hasTaleType">
+        <rdfs:domain rdf:resource="http://example.org/verhalenbank/Story"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="nl">verhaal heeft AT/ATU-type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/verhalenbank/Action -->
+
+    <owl:Class rdf:about="http://example.org/verhalenbank/Action">
+        <rdfs:label xml:lang="nl">Handeling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/verhalenbank/Character -->
+
+    <owl:Class rdf:about="http://example.org/verhalenbank/Character">
+        <rdfs:label xml:lang="nl">Karakter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/verhalenbank/Emotion -->
+
+    <owl:Class rdf:about="http://example.org/verhalenbank/Emotion">
+        <rdfs:label xml:lang="nl">Emotie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/verhalenbank/Location -->
+
+    <owl:Class rdf:about="http://example.org/verhalenbank/Location">
+        <rdfs:label xml:lang="nl">Locatie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/verhalenbank/Object -->
+
+    <owl:Class rdf:about="http://example.org/verhalenbank/Object">
+        <rdfs:label xml:lang="nl">Voorwerp</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/verhalenbank/Story -->
+
+    <owl:Class rdf:about="http://example.org/verhalenbank/Story">
+        <rdfs:label xml:lang="nl">Verhaal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/verhalenbank/Temporal -->
+
+    <owl:Class rdf:about="http://example.org/verhalenbank/Temporal">
+        <rdfs:label xml:lang="nl">Tijdsaanduiding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/verhalenbank/Adriaan -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Adriaan">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:appearsIn rdf:resource="http://example.org/verhalenbank/Item_34866"/>
+        <rdfs:label xml:lang="nl">Adriaan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Amsterdam -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Amsterdam">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
+        <rdfs:label xml:lang="nl">Amsterdam</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Avermannekes -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Avermannekes">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:usesObject rdf:resource="http://example.org/verhalenbank/gouden_koets"/>
+        <rdfs:label xml:lang="nl">Avermannekes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Averput -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Averput">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
+        <rdfs:label xml:lang="nl">Averput</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Baggelbeer -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Baggelbeer">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdfs:label xml:lang="nl">Baggelbeer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Bart -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Bart">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:usesObject rdf:resource="http://example.org/verhalenbank/spoel"/>
+        <rdfs:label xml:lang="nl">Bart</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Beijerlandselaan_in_Rotterdam -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Beijerlandselaan_in_Rotterdam">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
+        <rdfs:label xml:lang="nl">Beijerlandselaan in Rotterdam</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Bennekom -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Bennekom">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
+        <rdfs:label xml:lang="nl">Bennekom</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Druten -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Druten">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
+        <rdfs:label xml:lang="nl">Druten</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Groot_Ammers -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Groot_Ammers">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
+        <rdfs:label xml:lang="nl">Groot-Ammers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Hamburgerbrug_in_Utrecht -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Hamburgerbrug_in_Utrecht">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
+        <rdfs:label xml:lang="nl">Hamburgerbrug in Utrecht</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Henderikus_Hut -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Henderikus_Hut">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:defeats rdf:resource="http://example.org/verhalenbank/Baggelbeer"/>
+        <rdfs:label xml:lang="nl">Henderikus Hut</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_125530 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_125530">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasLocation rdf:resource="http://example.org/verhalenbank/Wijk_en_Aalburg"/>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>SINSAG 0750</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_125530</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_125792 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_125792">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasSubGenre xml:lang="nl">sage</vb:hasSubGenre>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>TM 3101, SINSAG 0580</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_125792</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_125828 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_125828">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <rdfs:label xml:lang="nl">Item_125828</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_127602 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_127602">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>SINSAG 0333</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_127602</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_127814 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_127814">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasSubGenre xml:lang="nl">sage</vb:hasSubGenre>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>SINSAG 0478, SINSAG 0333</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_127814</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_15309 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_15309">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasSubGenre>mop</vb:hasSubGenre>
+        <vb:hasTaleType>TM 8057</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_15309</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_18820 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_18820">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasMotif>X1737</vb:hasMotif>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>AT 1889H, ATU 1889H</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_18820</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_19161 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_19161">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasSubGenre>sprookje</vb:hasSubGenre>
+        <vb:hasTaleType>AT 0545B, ATU 0545B</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_19161</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_24959 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_24959">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasLocation rdf:resource="http://example.org/verhalenbank/Amsterdam"/>
+        <vb:hasSubGenre>mop</vb:hasSubGenre>
+        <vb:hasTaleType>TM 8042</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_24959</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_34685 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_34685">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasSubGenre>sprookje</vb:hasSubGenre>
+        <vb:hasTaleType>AT 2030J, ATU 2030</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_34685</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_34866 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_34866">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasSubGenre>sprookje</vb:hasSubGenre>
+        <vb:hasTaleType>AT 2035, ATU 2035</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_34866</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_35031 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_35031">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>SINSAG 0401</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_35031</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_39571 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_39571">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasLocation rdf:resource="http://example.org/verhalenbank/Wormerveerder_dijkje"/>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>SINSAG 0603</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_39571</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_41867 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_41867">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasLocation rdf:resource="http://example.org/verhalenbank/de_plek_waar_de_draak_was_verslagen"/>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>TM 3113</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_41867</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_41899 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_41899">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasTime rdf:resource="http://example.org/verhalenbank/rond_het_jaar_900"/>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>TM 3113</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_41899</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_42363 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_42363">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>SINSAG 0334</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_42363</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_42882 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_42882">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <rdfs:label xml:lang="nl">Item_42882</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_46750 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_46750">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>SINSAG 0478</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_46750</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_46865 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_46865">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasLocation rdf:resource="http://example.org/verhalenbank/Hamburgerbrug_in_Utrecht"/>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>SINSAG 1341</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_46865</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_46868 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_46868">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>SINSAG 0195, TM 4905</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_46868</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_47370 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_47370">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>SINSAG 1341</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_47370</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_49580 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_49580">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>TM 3109</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_49580</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_49828 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_49828">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>SINSAG 0403</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_49828</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_49976 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_49976">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasLocation rdf:resource="http://example.org/verhalenbank/Beijerlandselaan_in_Rotterdam"/>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>SINSAG 0450</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_49976</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_50083 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_50083">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasLocation rdf:resource="http://example.org/verhalenbank/de_Rijt_in_Luiksgestel"/>
+        <vb:hasMotif>D674, E501.11.1.4</vb:hasMotif>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>TM 3114</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_50083</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_50267 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_50267">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasMotif>G241.4.3, F471.l.1.1, G265.3</vb:hasMotif>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>TM 3108</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_50267</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_57943 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_57943">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasMotif>D2161</vb:hasMotif>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <vb:hasTaleType>TM 3102</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_57943</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_72465 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_72465">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasSubGenre>sage</vb:hasSubGenre>
+        <rdfs:label xml:lang="nl">Item_72465</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_9197 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_9197">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasLocation rdf:resource="http://example.org/verhalenbank/Druten"/>
+        <vb:hasSubGenre>broodjeaapverhaal</vb:hasSubGenre>
+        <vb:hasTaleType>SINSAG 0456</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_9197</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Item_9577 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Item_9577">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
+        <vb:hasEnding xml:lang="nl">alles staat in de fik/ brandt/ vuur</vb:hasEnding>
+        <vb:hasMotif>J1269.12</vb:hasMotif>
+        <vb:hasSubGenre>sprookje</vb:hasSubGenre>
+        <vb:hasTaleType>AT 1562A, ATU 1562A</vb:hasTaleType>
+        <rdfs:label xml:lang="nl">Item_9577</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Jozef_Cops -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Jozef_Cops">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:hasEmotion rdf:resource="http://example.org/verhalenbank/verschrikte"/>
+        <rdfs:label xml:lang="nl">Jozef Cops</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Keesje -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Keesje">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:appearsIn rdf:resource="http://example.org/verhalenbank/Item_34685"/>
+        <rdfs:label xml:lang="nl">Keesje</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Koe -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Koe">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
+        <vb:hasDescription xml:lang="nl">600 pond</vb:hasDescription>
+        <rdfs:label xml:lang="nl">Koe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Veghel -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Veghel">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
+        <vb:hasDescription xml:lang="nl">bijgelovige plaats</vb:hasDescription>
+        <rdfs:label xml:lang="nl">Veghel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Vuurman_van_Arcen -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Vuurman_van_Arcen">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:usesObject rdf:resource="http://example.org/verhalenbank/gloeiende_grenssteen"/>
+        <rdfs:label xml:lang="nl">Vuurman van Arcen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Wichard_van_Pont -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Wichard_van_Pont">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:defeats rdf:resource="http://example.org/verhalenbank/draak"/>
+        <rdfs:label xml:lang="nl">Wichard van Pont</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Wichard_van_Pont_en_zijn_broer -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Wichard_van_Pont_en_zijn_broer">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:defeats rdf:resource="http://example.org/verhalenbank/draak"/>
+        <rdfs:label xml:lang="nl">Wichard van Pont en zijn broer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Wijk_en_Aalburg -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Wijk_en_Aalburg">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
+        <rdfs:label xml:lang="nl">Wijk en Aalburg</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Wormerveerder_dijkje -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Wormerveerder_dijkje">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
+        <rdfs:label xml:lang="nl">Wormerveerder dijkje</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/Woudenberg -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Woudenberg">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:livesIn rdf:resource="http://example.org/verhalenbank/Groot_Ammers"/>
+        <vb:executesAction xml:lang="nl">wrijft over de hand van het schoolmeisje</vb:executesAction>
+        <rdfs:label xml:lang="nl">Woudenberg</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/angst -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/angst">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Emotion"/>
+        <rdfs:label xml:lang="nl">angst</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/bale -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/bale">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
+        <rdfs:label xml:lang="nl">bale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/basilisk -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/basilisk">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:appearsIn rdf:resource="http://example.org/verhalenbank/Item_47370"/>
+        <rdfs:label xml:lang="nl">basilisk</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/begraven -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/begraven">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Action"/>
+        <vb:hasTime rdf:resource="http://example.org/verhalenbank/21_september_1659"/>
+        <rdfs:label xml:lang="nl">begraven</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/blondje -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/blondje">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:executesAction xml:lang="nl">het aantal schapen raden</vb:executesAction>
+        <rdfs:label xml:lang="nl">blondje</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/brutale_jongen -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/brutale_jongen">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:helps rdf:resource="http://example.org/verhalenbank/priester"/>
+        <rdfs:label xml:lang="nl">brutale jongen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/de_Rijt_in_Luiksgestel -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/de_Rijt_in_Luiksgestel">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
+        <rdfs:label xml:lang="nl">de Rijt in Luiksgestel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/de_grootste_kerels -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/de_grootste_kerels">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:hasEmotion rdf:resource="http://example.org/verhalenbank/angst"/>
+        <rdfs:label xml:lang="nl">de grootste kerels</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/de_molenkolk_in_Steenderen -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/de_molenkolk_in_Steenderen">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
+        <rdfs:label xml:lang="nl">de molenkolk in Steenderen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/de_plek_waar_de_draak_was_verslagen -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/de_plek_waar_de_draak_was_verslagen">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
+        <rdfs:label xml:lang="nl">de plek waar de draak was verslagen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/draak -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/draak">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdfs:label xml:lang="nl">draak</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/een_heelen_hoop_geld -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/een_heelen_hoop_geld">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
+        <rdfs:label xml:lang="nl">een heelen hoop geld</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/een_van_de_paardenbezitters -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/een_van_de_paardenbezitters">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:findsObject rdf:resource="http://example.org/verhalenbank/zeef"/>
+        <rdfs:label xml:lang="nl">een van de paardenbezitters</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/geesten -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/geesten">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:appearsIn rdf:resource="http://example.org/verhalenbank/Item_49976"/>
+        <rdfs:label xml:lang="nl">geesten</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/gelaarsde_kat -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/gelaarsde_kat">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:givesObject rdf:resource="http://example.org/verhalenbank/konijntje"/>
+        <rdfs:label xml:lang="nl">gelaarsde kat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/ging -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/ging">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Action"/>
+        <vb:hasTime rdf:resource="http://example.org/verhalenbank/volgende_dag"/>
+        <rdfs:label xml:lang="nl">ging</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/gloeiende_grenssteen -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/gloeiende_grenssteen">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
+        <rdfs:label xml:lang="nl">gloeiende grenssteen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/gloeiende_sleutel -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/gloeiende_sleutel">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
+        <rdfs:label xml:lang="nl">gloeiende sleutel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/gouden_koets -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/gouden_koets">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
+        <rdfs:label xml:lang="nl">gouden koets</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/herberg_de_Zwarte_Hond -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/herberg_de_Zwarte_Hond">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
+        <rdfs:label xml:lang="nl">herberg &apos;de Zwarte Hond&apos;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/herder -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/herder">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:hasEmotion rdf:resource="http://example.org/verhalenbank/verbazing"/>
+        <rdfs:label xml:lang="nl">herder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/het_gedrocht -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/het_gedrocht">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:hasLocation rdf:resource="http://example.org/verhalenbank/de_molenkolk_in_Steenderen"/>
+        <rdfs:label xml:lang="nl">het gedrocht</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/honden -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/honden">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:executesAction xml:lang="nl">met ketting rammelen</vb:executesAction>
+        <rdfs:label xml:lang="nl">honden</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/hoogleraar_Bierman -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/hoogleraar_Bierman">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:usesObject rdf:resource="http://example.org/verhalenbank/random_number_generator"/>
+        <rdfs:label xml:lang="nl">hoogleraar Bierman</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/ijzeren_veulen -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/ijzeren_veulen">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:hasDescription xml:lang="nl">een soort draak in de vorm van een paard</vb:hasDescription>
+        <rdfs:label xml:lang="nl">ijzeren veulen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/jongen -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/jongen">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:usesObject rdf:resource="http://example.org/verhalenbank/spiegel"/>
+        <rdfs:label xml:lang="nl">jongen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/kat -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/kat">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
+        <vb:executesAction xml:lang="nl">betoverd</vb:executesAction>
+        <vb:executesAction xml:lang="nl">werd steeds zwaarder en veranderde in een oude vrouw</vb:executesAction>
+        <vb:hasDescription xml:lang="nl">spook</vb:hasDescription>
+        <rdfs:label xml:lang="nl">kat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/konijntje -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/konijntje">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
+        <rdfs:label xml:lang="nl">konijntje</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/meester_Jan -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/meester_Jan">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:executesAction xml:lang="nl">Stupiditeit en absurde onwetendheid van Seppe</vb:executesAction>
+        <rdfs:label xml:lang="nl">meester Jan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/men -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/men">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:usesObject rdf:resource="http://example.org/verhalenbank/spiegel"/>
+        <rdfs:label xml:lang="nl">men</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/mens -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/mens">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:executesAction xml:lang="nl">kan hard waaien</vb:executesAction>
+        <rdfs:label xml:lang="nl">mens</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/mol -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/mol">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:executesAction xml:lang="nl">knabbelt de galg af</vb:executesAction>
+        <rdfs:label xml:lang="nl">mol</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/muis -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/muis">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdfs:label xml:lang="nl">muis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/notaris -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/notaris">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:livesIn rdf:resource="http://example.org/verhalenbank/Bennekom"/>
+        <rdfs:label xml:lang="nl">notaris</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/onderwaterland -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/onderwaterland">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
+        <rdfs:label xml:lang="nl">onderwaterland</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/priester -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/priester">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <rdfs:label xml:lang="nl">priester</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/random_number_generator -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/random_number_generator">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
+        <rdfs:label xml:lang="nl">random-number-generator</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/reebok -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/reebok">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:helps rdf:resource="http://example.org/verhalenbank/Henderikus_Hut"/>
+        <rdfs:label xml:lang="nl">reebok</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/rond_het_jaar_900 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/rond_het_jaar_900">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Temporal"/>
+        <rdfs:label xml:lang="nl">rond het jaar 900</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/schoolmeester -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/schoolmeester">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:findsObject rdf:resource="http://example.org/verhalenbank/schrift_van_Mari_t"/>
+        <rdfs:label xml:lang="nl">schoolmeester</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/schrift_van_Mari_t -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/schrift_van_Mari_t">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
+        <rdfs:label xml:lang="nl">schrift van Mariët</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/snaak -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/snaak">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:executesAction xml:lang="nl">maakt drie kruisen</vb:executesAction>
+        <rdfs:label xml:lang="nl">snaak</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/spiegel -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/spiegel">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
+        <rdfs:label xml:lang="nl">spiegel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/spoel -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/spoel">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
+        <rdfs:label xml:lang="nl">spoel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/tovenaar -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/tovenaar">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:transformsInto rdf:resource="http://example.org/verhalenbank/muis"/>
+        <rdfs:label xml:lang="nl">tovenaar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/tweeling -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/tweeling">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:discoversLocation rdf:resource="http://example.org/verhalenbank/onderwaterland"/>
+        <rdfs:label xml:lang="nl">tweeling</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/verbazing -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/verbazing">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Emotion"/>
+        <rdfs:label xml:lang="nl">verbazing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/verschrikte -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/verschrikte">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Emotion"/>
+        <rdfs:label xml:lang="nl">verschrikte</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/volgende_dag -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/volgende_dag">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Temporal"/>
+        <rdfs:label xml:lang="nl">volgende dag</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/vrome_vrouw -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/vrome_vrouw">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:livesIn rdf:resource="http://example.org/verhalenbank/bale"/>
+        <rdfs:label xml:lang="nl">vrome vrouw</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/vrouw -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/vrouw">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:usesObject rdf:resource="http://example.org/verhalenbank/zeef"/>
+        <rdfs:label xml:lang="nl">vrouw</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/vrouw_van_de_notaris -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/vrouw_van_de_notaris">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:findsObject rdf:resource="http://example.org/verhalenbank/een_heelen_hoop_geld"/>
+        <rdfs:label xml:lang="nl">vrouw van de notaris</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/woeste_ridder -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/woeste_ridder">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:hasLocation rdf:resource="http://example.org/verhalenbank/Averput"/>
+        <rdfs:label xml:lang="nl">woeste ridder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/wordt_verteld -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/wordt_verteld">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Action"/>
+        <vb:hasLocation rdf:resource="http://example.org/verhalenbank/herberg_de_Zwarte_Hond"/>
+        <rdfs:label xml:lang="nl">wordt verteld</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/zeef -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/zeef">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
+        <rdfs:label xml:lang="nl">zeef</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/zwarte_hond -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/zwarte_hond">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
+        <vb:usesObject rdf:resource="http://example.org/verhalenbank/gloeiende_sleutel"/>
+        <rdfs:label xml:lang="nl">zwarte hond</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/verhalenbank/21_september_1659 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/21_september_1659">
+        <rdf:type rdf:resource="http://example.org/verhalenbank/Temporal"/>
+        <rdfs:label xml:lang="nl">21 september 1659</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
