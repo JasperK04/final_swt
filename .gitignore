@@ -223,4 +223,5 @@ __marimo__/
 # Custom
 data/
 batch_qa_output/
+batch_qa_label_lookup_output/
 Side/

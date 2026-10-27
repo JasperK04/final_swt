@@ -9,6 +9,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://example.org/verhalenbank/Ontologie">
         <rdfs:label xml:lang="nl">Ontologie van Nederlandse volksverhalen</rdfs:label>
+        <rdfs:label xml:lang="fy">Ontology fan Nederlânske folksferhalen</rdfs:label>
+        <rdfs:label xml:lang="de">Ontologie niederlandischer Volkserzahlungen</rdfs:label>
+        <rdfs:label xml:lang="en">Ontology of Dutch folk tales</rdfs:label>
     </owl:Ontology>
     
 
@@ -30,6 +33,9 @@
         <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
         <rdfs:range rdf:resource="http://example.org/verhalenbank/Story"/>
         <rdfs:label xml:lang="nl">karakter komt voor in verhaal</rdfs:label>
+        <rdfs:label xml:lang="fy">personaazje komt foar yn ferhaal</rdfs:label>
+        <rdfs:label xml:lang="de">Charakter kommt in Geschichte vor</rdfs:label>
+        <rdfs:label xml:lang="en">character appears in story</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -40,6 +46,9 @@
         <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
         <rdfs:range rdf:resource="http://example.org/verhalenbank/Character"/>
         <rdfs:label xml:lang="nl">karakter verslaat of misleidt ander karakter</rdfs:label>
+        <rdfs:label xml:lang="fy">personaazje ferslacht of ferrifelt in oar personaazje</rdfs:label>
+        <rdfs:label xml:lang="de">Charakter besiegt oder täuscht einen anderen Charakter</rdfs:label>
+        <rdfs:label xml:lang="en">character defeats or deceives another character</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -50,6 +59,9 @@
         <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
         <rdfs:range rdf:resource="http://example.org/verhalenbank/Location"/>
         <rdfs:label xml:lang="nl">karakter ontdekt locatie</rdfs:label>
+        <rdfs:label xml:lang="fy">personaazje ûntdekt lokaasje</rdfs:label>
+        <rdfs:label xml:lang="de">Charakter entdeckt Ort</rdfs:label>
+        <rdfs:label xml:lang="en">character discovers location</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -60,6 +72,9 @@
         <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
         <rdfs:range rdf:resource="http://example.org/verhalenbank/Object"/>
         <rdfs:label xml:lang="nl">karakter vindt voorwerp</rdfs:label>
+        <rdfs:label xml:lang="fy">personaazje fynt foarwerp</rdfs:label>
+        <rdfs:label xml:lang="de">Charakter findet Gegenstand</rdfs:label>
+        <rdfs:label xml:lang="en">character finds object</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -70,6 +85,9 @@
         <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
         <rdfs:range rdf:resource="http://example.org/verhalenbank/Object"/>
         <rdfs:label xml:lang="nl">karakter geeft voorwerp</rdfs:label>
+        <rdfs:label xml:lang="fy">personaazje jout foarwerp</rdfs:label>
+        <rdfs:label xml:lang="de">Charakter gibt Gegenstand</rdfs:label>
+        <rdfs:label xml:lang="en">character gives object</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -80,6 +98,9 @@
         <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
         <rdfs:range rdf:resource="http://example.org/verhalenbank/Emotion"/>
         <rdfs:label xml:lang="nl">karakter heeft emotie</rdfs:label>
+        <rdfs:label xml:lang="fy">personaazje hat emoasje</rdfs:label>
+        <rdfs:label xml:lang="de">Charakter hat Emotion</rdfs:label>
+        <rdfs:label xml:lang="en">character has emotion</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -89,6 +110,9 @@
     <owl:ObjectProperty rdf:about="http://example.org/verhalenbank/hasLocation">
         <rdfs:range rdf:resource="http://example.org/verhalenbank/Location"/>
         <rdfs:label xml:lang="nl">iets heeft locatie</rdfs:label>
+        <rdfs:label xml:lang="fy">eat hat in lokaasje</rdfs:label>
+        <rdfs:label xml:lang="de">etwas hat einen Ort</rdfs:label>
+        <rdfs:label xml:lang="en">thing has location</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -98,6 +122,9 @@
     <owl:ObjectProperty rdf:about="http://example.org/verhalenbank/hasTime">
         <rdfs:range rdf:resource="http://example.org/verhalenbank/Temporal"/>
         <rdfs:label xml:lang="nl">iets heeft een tijdsaanduiding</rdfs:label>
+        <rdfs:label xml:lang="fy">eat hat in tiidsoantsjutting</rdfs:label>
+        <rdfs:label xml:lang="de">etwas hat eine Zeitangabe</rdfs:label>
+        <rdfs:label xml:lang="en">thing has a time indication</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -108,6 +135,9 @@
         <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
         <rdfs:range rdf:resource="http://example.org/verhalenbank/Character"/>
         <rdfs:label xml:lang="nl">karakter helpt karakter</rdfs:label>
+        <rdfs:label xml:lang="fy">personaazje helpt personaazje</rdfs:label>
+        <rdfs:label xml:lang="de">Charakter hilft Charakter</rdfs:label>
+        <rdfs:label xml:lang="en">character helps character</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -118,6 +148,9 @@
         <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
         <rdfs:range rdf:resource="http://example.org/verhalenbank/Location"/>
         <rdfs:label xml:lang="nl">karakter woont in locatie</rdfs:label>
+        <rdfs:label xml:lang="fy">personaazje wennet op lokaasje</rdfs:label>
+        <rdfs:label xml:lang="de">Charakter lebt an einem Ort</rdfs:label>
+        <rdfs:label xml:lang="en">character lives in location</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -128,6 +161,9 @@
         <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
         <rdfs:range rdf:resource="http://example.org/verhalenbank/Character"/>
         <rdfs:label xml:lang="nl">karakter verandert in karakter</rdfs:label>
+        <rdfs:label xml:lang="fy">personaazje feroaret yn personaazje</rdfs:label>
+        <rdfs:label xml:lang="de">Charakter verwandelt sich in Charakter</rdfs:label>
+        <rdfs:label xml:lang="en">character transforms into character</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -138,6 +174,9 @@
         <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
         <rdfs:range rdf:resource="http://example.org/verhalenbank/Object"/>
         <rdfs:label xml:lang="nl">karakter gebruikt voorwerp</rdfs:label>
+        <rdfs:label xml:lang="fy">personaazje brûkt objekt</rdfs:label>
+        <rdfs:label xml:lang="de">Charakter verwendet Gegenstand</rdfs:label>
+        <rdfs:label xml:lang="en">character uses object</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -159,6 +198,9 @@
         <rdfs:domain rdf:resource="http://example.org/verhalenbank/Character"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="nl">karakter voert handeling uit</rdfs:label>
+        <rdfs:label xml:lang="fy">personaazje fiert hanneling ût</rdfs:label>
+        <rdfs:label xml:lang="de">Charakter führt Handlung aus</rdfs:label>
+        <rdfs:label xml:lang="en">character performs action</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -168,6 +210,9 @@
     <owl:DatatypeProperty rdf:about="http://example.org/verhalenbank/hasDescription">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="nl">iets heeft beschrijving</rdfs:label>
+        <rdfs:label xml:lang="fy">eat hat in beskriuwing</rdfs:label>
+        <rdfs:label xml:lang="de">etwas hat eine Beschreibung</rdfs:label>
+        <rdfs:label xml:lang="en">thing has description</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -178,6 +223,9 @@
         <rdfs:domain rdf:resource="http://example.org/verhalenbank/Story"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="nl">verhaal heeft afloop</rdfs:label>
+        <rdfs:label xml:lang="fy">ferhaal hat ein</rdfs:label>
+        <rdfs:label xml:lang="de">Geschichte hat ein Ende</rdfs:label>
+        <rdfs:label xml:lang="en">story has ending</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -188,6 +236,9 @@
         <rdfs:domain rdf:resource="http://example.org/verhalenbank/Story"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="nl">verhaal heeft motief</rdfs:label>
+        <rdfs:label xml:lang="fy">ferhaal hat motyf</rdfs:label>
+        <rdfs:label xml:lang="de">Geschichte hat ein Motiv</rdfs:label>
+        <rdfs:label xml:lang="en">story has motif</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -198,6 +249,9 @@
         <rdfs:domain rdf:resource="http://example.org/verhalenbank/Story"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="nl">verhaal heeft subgenre</rdfs:label>
+        <rdfs:label xml:lang="fy">ferhaal hat subgenre</rdfs:label>
+        <rdfs:label xml:lang="de">Geschichte hat ein Subgenre</rdfs:label>
+        <rdfs:label xml:lang="en">story has subgenre</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -208,6 +262,9 @@
         <rdfs:domain rdf:resource="http://example.org/verhalenbank/Story"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="nl">verhaal heeft AT/ATU-type</rdfs:label>
+        <rdfs:label xml:lang="fy">ferhaal hat AT/ATU-type</rdfs:label>
+        <rdfs:label xml:lang="de">Geschichte hat einen AT/ATU-Typ</rdfs:label>
+        <rdfs:label xml:lang="en">story has AT/ATU type</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -227,6 +284,9 @@
 
     <owl:Class rdf:about="http://example.org/verhalenbank/Action">
         <rdfs:label xml:lang="nl">Handeling</rdfs:label>
+        <rdfs:label xml:lang="fy">Hanneling</rdfs:label>
+        <rdfs:label xml:lang="de">Handlung</rdfs:label>
+        <rdfs:label xml:lang="en">Action</rdfs:label>
     </owl:Class>
     
 
@@ -235,6 +295,9 @@
 
     <owl:Class rdf:about="http://example.org/verhalenbank/Character">
         <rdfs:label xml:lang="nl">Karakter</rdfs:label>
+        <rdfs:label xml:lang="fy">Personaazje</rdfs:label>
+        <rdfs:label xml:lang="de">Charakter</rdfs:label>
+        <rdfs:label xml:lang="en">Character</rdfs:label>
     </owl:Class>
     
 
@@ -243,6 +306,9 @@
 
     <owl:Class rdf:about="http://example.org/verhalenbank/Emotion">
         <rdfs:label xml:lang="nl">Emotie</rdfs:label>
+        <rdfs:label xml:lang="fy">Emoasje</rdfs:label>
+        <rdfs:label xml:lang="de">Emotion</rdfs:label>
+        <rdfs:label xml:lang="en">Emotion</rdfs:label>
     </owl:Class>
     
 
@@ -251,6 +317,9 @@
 
     <owl:Class rdf:about="http://example.org/verhalenbank/Location">
         <rdfs:label xml:lang="nl">Locatie</rdfs:label>
+        <rdfs:label xml:lang="fy">Lokaasje</rdfs:label>
+        <rdfs:label xml:lang="de">Ort</rdfs:label>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
     </owl:Class>
     
 
@@ -259,6 +328,9 @@
 
     <owl:Class rdf:about="http://example.org/verhalenbank/Object">
         <rdfs:label xml:lang="nl">Voorwerp</rdfs:label>
+        <rdfs:label xml:lang="fy">Foarwerp</rdfs:label>
+        <rdfs:label xml:lang="de">Gegenstand</rdfs:label>
+        <rdfs:label xml:lang="en">Object</rdfs:label>
     </owl:Class>
     
 
@@ -267,6 +339,9 @@
 
     <owl:Class rdf:about="http://example.org/verhalenbank/Story">
         <rdfs:label xml:lang="nl">Verhaal</rdfs:label>
+        <rdfs:label xml:lang="fy">Ferhaal</rdfs:label>
+        <rdfs:label xml:lang="de">Geschichte</rdfs:label>
+        <rdfs:label xml:lang="en">Story</rdfs:label>
     </owl:Class>
     
 
@@ -275,6 +350,9 @@
 
     <owl:Class rdf:about="http://example.org/verhalenbank/Temporal">
         <rdfs:label xml:lang="nl">Tijdsaanduiding</rdfs:label>
+        <rdfs:label xml:lang="fy">Tiidsoantsjutting</rdfs:label>
+        <rdfs:label xml:lang="de">Zeitangabe</rdfs:label>
+        <rdfs:label xml:lang="en">Time indication</rdfs:label>
     </owl:Class>
     
 
@@ -296,6 +374,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:appearsIn rdf:resource="http://example.org/verhalenbank/Item_34866"/>
         <rdfs:label xml:lang="nl">Adriaan</rdfs:label>
+        <rdfs:label xml:lang="fy">Adriaan</rdfs:label>
+        <rdfs:label xml:lang="de">Adriaan</rdfs:label>
+        <rdfs:label xml:lang="en">Adriaan</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -305,6 +386,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Amsterdam">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
         <rdfs:label xml:lang="nl">Amsterdam</rdfs:label>
+        <rdfs:label xml:lang="fy">Amsterdam</rdfs:label>
+        <rdfs:label xml:lang="de">Amsterdam</rdfs:label>
+        <rdfs:label xml:lang="en">Amsterdam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -315,6 +399,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:usesObject rdf:resource="http://example.org/verhalenbank/gouden_koets"/>
         <rdfs:label xml:lang="nl">Avermannekes</rdfs:label>
+        <rdfs:label xml:lang="fy">Avermannekes</rdfs:label>
+        <rdfs:label xml:lang="de">Zwerg/Wichtel</rdfs:label>
+        <rdfs:label xml:lang="en">Avermannekes</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -324,6 +411,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Averput">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
         <rdfs:label xml:lang="nl">Averput</rdfs:label>
+        <rdfs:label xml:lang="fy">Averput</rdfs:label>
+        <rdfs:label xml:lang="de">Averput</rdfs:label>
+        <rdfs:label xml:lang="en">Averput</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -333,6 +423,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Baggelbeer">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <rdfs:label xml:lang="nl">Baggelbeer</rdfs:label>
+        <rdfs:label xml:lang="fy">Baggelbeer</rdfs:label>
+        <rdfs:label xml:lang="de">Baggelbeer</rdfs:label>
+        <rdfs:label xml:lang="en">Baggelbeer</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -343,6 +436,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:usesObject rdf:resource="http://example.org/verhalenbank/spoel"/>
         <rdfs:label xml:lang="nl">Bart</rdfs:label>
+        <rdfs:label xml:lang="fy">Bart</rdfs:label>
+        <rdfs:label xml:lang="de">Bart</rdfs:label>
+        <rdfs:label xml:lang="en">Bart</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -352,6 +448,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Beijerlandselaan_in_Rotterdam">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
         <rdfs:label xml:lang="nl">Beijerlandselaan in Rotterdam</rdfs:label>
+        <rdfs:label xml:lang="fy">Beijerlandselaan yn Rotterdam</rdfs:label>
+        <rdfs:label xml:lang="de">Beijerlandse Allee in Rotterdam</rdfs:label>
+        <rdfs:label xml:lang="en">Beijerlandselaan in Rotterdam</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -361,6 +460,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Bennekom">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
         <rdfs:label xml:lang="nl">Bennekom</rdfs:label>
+        <rdfs:label xml:lang="fy">Bennekom</rdfs:label>
+        <rdfs:label xml:lang="de">Bennekom</rdfs:label>
+        <rdfs:label xml:lang="en">Bennekom</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -370,6 +472,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Druten">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
         <rdfs:label xml:lang="nl">Druten</rdfs:label>
+        <rdfs:label xml:lang="fy">Druten</rdfs:label>
+        <rdfs:label xml:lang="de">Druten</rdfs:label>
+        <rdfs:label xml:lang="en">Druten</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -379,6 +484,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Groot_Ammers">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
         <rdfs:label xml:lang="nl">Groot-Ammers</rdfs:label>
+        <rdfs:label xml:lang="fy">Groot-Ammers</rdfs:label>
+        <rdfs:label xml:lang="de">Groot-Ammers</rdfs:label>
+        <rdfs:label xml:lang="en">Groot-Ammers</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -388,6 +496,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Hamburgerbrug_in_Utrecht">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
         <rdfs:label xml:lang="nl">Hamburgerbrug in Utrecht</rdfs:label>
+        <rdfs:label xml:lang="fy">Hamburgerbrêge yn Utert</rdfs:label>
+        <rdfs:label xml:lang="de">Hamburgerbrücke in Utrecht</rdfs:label>
+        <rdfs:label xml:lang="en">Hamburgerbrug in Utrecht</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -398,6 +509,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:defeats rdf:resource="http://example.org/verhalenbank/Baggelbeer"/>
         <rdfs:label xml:lang="nl">Henderikus Hut</rdfs:label>
+        <rdfs:label xml:lang="fy">Henderikus Hut</rdfs:label>
+        <rdfs:label xml:lang="de">Henderikus Hut</rdfs:label>
+        <rdfs:label xml:lang="en">Henderikus Hut</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -410,6 +524,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>SINSAG 0750</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_125530</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_125530</rdfs:label>
+        <rdfs:label xml:lang="de">Item_125530</rdfs:label>
+        <rdfs:label xml:lang="en">Item_125530</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -422,6 +539,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>TM 3101, SINSAG 0580</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_125792</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_125792</rdfs:label>
+        <rdfs:label xml:lang="de">Item_125792</rdfs:label>
+        <rdfs:label xml:lang="en">Item_125792</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -432,6 +552,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <rdfs:label xml:lang="nl">Item_125828</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_125828</rdfs:label>
+        <rdfs:label xml:lang="de">Item_125828</rdfs:label>
+        <rdfs:label xml:lang="en">Item_125828</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -443,6 +566,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>SINSAG 0333</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_127602</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_127602</rdfs:label>
+        <rdfs:label xml:lang="de">Item_127602</rdfs:label>
+        <rdfs:label xml:lang="en">Item_127602</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -455,6 +581,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>SINSAG 0478, SINSAG 0333</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_127814</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_127814</rdfs:label>
+        <rdfs:label xml:lang="de">Item_127814</rdfs:label>
+        <rdfs:label xml:lang="en">Item_127814</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -466,6 +595,9 @@
         <vb:hasSubGenre>mop</vb:hasSubGenre>
         <vb:hasTaleType>TM 8057</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_15309</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_15309</rdfs:label>
+        <rdfs:label xml:lang="de">Item_15309</rdfs:label>
+        <rdfs:label xml:lang="en">Item_15309</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -478,6 +610,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>AT 1889H, ATU 1889H</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_18820</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_18820</rdfs:label>
+        <rdfs:label xml:lang="de">Item_18820</rdfs:label>
+        <rdfs:label xml:lang="en">Item_18820</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -489,6 +624,9 @@
         <vb:hasSubGenre>sprookje</vb:hasSubGenre>
         <vb:hasTaleType>AT 0545B, ATU 0545B</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_19161</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_19161</rdfs:label>
+        <rdfs:label xml:lang="de">Item_19161</rdfs:label>
+        <rdfs:label xml:lang="en">Item_19161</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -501,6 +639,9 @@
         <vb:hasSubGenre>mop</vb:hasSubGenre>
         <vb:hasTaleType>TM 8042</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_24959</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_24959</rdfs:label>
+        <rdfs:label xml:lang="de">Item_24959</rdfs:label>
+        <rdfs:label xml:lang="en">Item_24959</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -511,7 +652,10 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
         <vb:hasSubGenre>sprookje</vb:hasSubGenre>
         <vb:hasTaleType>AT 2030J, ATU 2030</vb:hasTaleType>
-        <rdfs:label xml:lang="nl">Item_34685</rdfs:label>
+        <rdfs:label xml:lang="nl">item_34685</rdfs:label>
+        <rdfs:label xml:lang="fy">item_34685</rdfs:label>
+        <rdfs:label xml:lang="de">item_34685</rdfs:label>
+        <rdfs:label xml:lang="en">Item_34685</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -523,6 +667,9 @@
         <vb:hasSubGenre>sprookje</vb:hasSubGenre>
         <vb:hasTaleType>AT 2035, ATU 2035</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_34866</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_38466</rdfs:label>
+        <rdfs:label xml:lang="de">Item_34866</rdfs:label>
+        <rdfs:label xml:lang="en">Item_34866</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -534,6 +681,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>SINSAG 0401</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_35031</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_35031</rdfs:label>
+        <rdfs:label xml:lang="de">Item_35031</rdfs:label>
+        <rdfs:label xml:lang="en">Item_35031</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -546,6 +696,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>SINSAG 0603</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_39571</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_39571</rdfs:label>
+        <rdfs:label xml:lang="de">Item_39571</rdfs:label>
+        <rdfs:label xml:lang="en">Item_39571</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -558,6 +711,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>TM 3113</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_41867</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_41867</rdfs:label>
+        <rdfs:label xml:lang="de">Item_41867</rdfs:label>
+        <rdfs:label xml:lang="en">Item_41867</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -570,6 +726,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>TM 3113</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_41899</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_41899</rdfs:label>
+        <rdfs:label xml:lang="de">Item_41899</rdfs:label>
+        <rdfs:label xml:lang="en">Item_41899</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -581,6 +740,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>SINSAG 0334</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_42363</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_42363</rdfs:label>
+        <rdfs:label xml:lang="de">Item_42363</rdfs:label>
+        <rdfs:label xml:lang="en">Item_42363</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -591,6 +753,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <rdfs:label xml:lang="nl">Item_42882</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_42882</rdfs:label>
+        <rdfs:label xml:lang="de">Item_42882</rdfs:label>
+        <rdfs:label xml:lang="en">Item_42882</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -602,6 +767,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>SINSAG 0478</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_46750</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_46750</rdfs:label>
+        <rdfs:label xml:lang="de">Item_46750</rdfs:label>
+        <rdfs:label xml:lang="en">Item_46750</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -614,6 +782,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>SINSAG 1341</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_46865</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_46865</rdfs:label>
+        <rdfs:label xml:lang="de">Item_46865</rdfs:label>
+        <rdfs:label xml:lang="en">Item_46865</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -625,6 +796,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>SINSAG 0195, TM 4905</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_46868</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_46868</rdfs:label>
+        <rdfs:label xml:lang="de">Item_46868</rdfs:label>
+        <rdfs:label xml:lang="en">Item_46868</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -636,6 +810,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>SINSAG 1341</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_47370</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_47370</rdfs:label>
+        <rdfs:label xml:lang="de">Item_47370</rdfs:label>
+        <rdfs:label xml:lang="en">Item_47370</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -647,6 +824,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>TM 3109</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_49580</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_49580</rdfs:label>
+        <rdfs:label xml:lang="de">Item_49580</rdfs:label>
+        <rdfs:label xml:lang="en">Item_49580</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -658,6 +838,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>SINSAG 0403</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_49828</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_49828</rdfs:label>
+        <rdfs:label xml:lang="de">Item_49828</rdfs:label>
+        <rdfs:label xml:lang="en">Item_49828</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -670,6 +853,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>SINSAG 0450</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_49976</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_49976</rdfs:label>
+        <rdfs:label xml:lang="de">Item_49976</rdfs:label>
+        <rdfs:label xml:lang="en">Item_49976</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -683,6 +869,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>TM 3114</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_50083</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_50083</rdfs:label>
+        <rdfs:label xml:lang="de">Item_50083</rdfs:label>
+        <rdfs:label xml:lang="en">Item_50083</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -695,6 +884,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>TM 3108</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_50267</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_50267</rdfs:label>
+        <rdfs:label xml:lang="de">Item_50267</rdfs:label>
+        <rdfs:label xml:lang="en">Item_50267</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -707,6 +899,9 @@
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <vb:hasTaleType>TM 3102</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_57943</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_57943</rdfs:label>
+        <rdfs:label xml:lang="de">Item_57943</rdfs:label>
+        <rdfs:label xml:lang="en">Item_57943</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -717,6 +912,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Story"/>
         <vb:hasSubGenre>sage</vb:hasSubGenre>
         <rdfs:label xml:lang="nl">Item_72465</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_72465</rdfs:label>
+        <rdfs:label xml:lang="de">Item_72465</rdfs:label>
+        <rdfs:label xml:lang="en">Item_72465</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -729,6 +927,9 @@
         <vb:hasSubGenre>broodjeaapverhaal</vb:hasSubGenre>
         <vb:hasTaleType>SINSAG 0456</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_9197</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_9197</rdfs:label>
+        <rdfs:label xml:lang="de">Item_9197</rdfs:label>
+        <rdfs:label xml:lang="en">Item_9197</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -742,6 +943,9 @@
         <vb:hasSubGenre>sprookje</vb:hasSubGenre>
         <vb:hasTaleType>AT 1562A, ATU 1562A</vb:hasTaleType>
         <rdfs:label xml:lang="nl">Item_9577</rdfs:label>
+        <rdfs:label xml:lang="fy">Item_9577</rdfs:label>
+        <rdfs:label xml:lang="de">Item_9577</rdfs:label>
+        <rdfs:label xml:lang="en">Item_9577</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -752,6 +956,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:hasEmotion rdf:resource="http://example.org/verhalenbank/verschrikte"/>
         <rdfs:label xml:lang="nl">Jozef Cops</rdfs:label>
+        <rdfs:label xml:lang="fy">Jozef Cops</rdfs:label>
+        <rdfs:label xml:lang="de">Jozef Cops</rdfs:label>
+        <rdfs:label xml:lang="en">Jozef Cops</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -762,6 +969,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:appearsIn rdf:resource="http://example.org/verhalenbank/Item_34685"/>
         <rdfs:label xml:lang="nl">Keesje</rdfs:label>
+        <rdfs:label xml:lang="fy">Keesje</rdfs:label>
+        <rdfs:label xml:lang="de">Keesje</rdfs:label>
+        <rdfs:label xml:lang="en">Keesje</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -772,6 +982,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
         <vb:hasDescription xml:lang="nl">600 pond</vb:hasDescription>
         <rdfs:label xml:lang="nl">Koe</rdfs:label>
+        <rdfs:label xml:lang="fy">Ko</rdfs:label>
+        <rdfs:label xml:lang="de">Kuh</rdfs:label>
+        <rdfs:label xml:lang="en">cow</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -782,6 +995,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
         <vb:hasDescription xml:lang="nl">bijgelovige plaats</vb:hasDescription>
         <rdfs:label xml:lang="nl">Veghel</rdfs:label>
+        <rdfs:label xml:lang="fy">Veghel</rdfs:label>
+        <rdfs:label xml:lang="de">Veghel</rdfs:label>
+        <rdfs:label xml:lang="en">Veghel</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -792,6 +1008,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:usesObject rdf:resource="http://example.org/verhalenbank/gloeiende_grenssteen"/>
         <rdfs:label xml:lang="nl">Vuurman van Arcen</rdfs:label>
+        <rdfs:label xml:lang="fy">Fjoerman fan Arcen</rdfs:label>
+        <rdfs:label xml:lang="de">Feuermann aus Arcen</rdfs:label>
+        <rdfs:label xml:lang="en">Fireman of Arcen</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -802,6 +1021,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:defeats rdf:resource="http://example.org/verhalenbank/draak"/>
         <rdfs:label xml:lang="nl">Wichard van Pont</rdfs:label>
+        <rdfs:label xml:lang="fy">Wichard fan Pont</rdfs:label>
+        <rdfs:label xml:lang="de">Wichard van Pont</rdfs:label>
+        <rdfs:label xml:lang="en">Wichard van Pont</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -812,6 +1034,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:defeats rdf:resource="http://example.org/verhalenbank/draak"/>
         <rdfs:label xml:lang="nl">Wichard van Pont en zijn broer</rdfs:label>
+        <rdfs:label xml:lang="fy">Wichard fan Pont en syn broer</rdfs:label>
+        <rdfs:label xml:lang="de">Wichard van Pont und sein Bruder</rdfs:label>
+        <rdfs:label xml:lang="en">Wichard van Pont and his brother</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -821,6 +1046,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Wijk_en_Aalburg">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
         <rdfs:label xml:lang="nl">Wijk en Aalburg</rdfs:label>
+        <rdfs:label xml:lang="fy">Wyk en Aalburg</rdfs:label>
+        <rdfs:label xml:lang="de">Wijk en Aalburg</rdfs:label>
+        <rdfs:label xml:lang="en">Wijk en Aalburg</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -830,6 +1058,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/Wormerveerder_dijkje">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
         <rdfs:label xml:lang="nl">Wormerveerder dijkje</rdfs:label>
+        <rdfs:label xml:lang="fy">Wormerveerder dykje</rdfs:label>
+        <rdfs:label xml:lang="de">Wormerveerder Deich</rdfs:label>
+        <rdfs:label xml:lang="en">Wormerveerder dike</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -841,6 +1072,9 @@
         <vb:livesIn rdf:resource="http://example.org/verhalenbank/Groot_Ammers"/>
         <vb:executesAction xml:lang="nl">wrijft over de hand van het schoolmeisje</vb:executesAction>
         <rdfs:label xml:lang="nl">Woudenberg</rdfs:label>
+        <rdfs:label xml:lang="fy">Woudenberg</rdfs:label>
+        <rdfs:label xml:lang="de">Woudenberg</rdfs:label>
+        <rdfs:label xml:lang="en">Woudenberg</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -850,6 +1084,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/angst">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Emotion"/>
         <rdfs:label xml:lang="nl">angst</rdfs:label>
+        <rdfs:label xml:lang="fy">eangst</rdfs:label>
+        <rdfs:label xml:lang="de">angst</rdfs:label>
+        <rdfs:label xml:lang="en">fear</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -859,6 +1096,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/bale">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
         <rdfs:label xml:lang="nl">bale</rdfs:label>
+        <rdfs:label xml:lang="fy">bale</rdfs:label>
+        <rdfs:label xml:lang="de">bale</rdfs:label>
+        <rdfs:label xml:lang="en">bale</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -869,6 +1109,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:appearsIn rdf:resource="http://example.org/verhalenbank/Item_47370"/>
         <rdfs:label xml:lang="nl">basilisk</rdfs:label>
+        <rdfs:label xml:lang="fy">basilisk</rdfs:label>
+        <rdfs:label xml:lang="de">Basilisk</rdfs:label>
+        <rdfs:label xml:lang="en">basilisk</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -879,6 +1122,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Action"/>
         <vb:hasTime rdf:resource="http://example.org/verhalenbank/21_september_1659"/>
         <rdfs:label xml:lang="nl">begraven</rdfs:label>
+        <rdfs:label xml:lang="fy">begroeven</rdfs:label>
+        <rdfs:label xml:lang="de">beerdigt</rdfs:label>
+        <rdfs:label xml:lang="en">buried</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -889,6 +1135,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:executesAction xml:lang="nl">het aantal schapen raden</vb:executesAction>
         <rdfs:label xml:lang="nl">blondje</rdfs:label>
+        <rdfs:label xml:lang="fy">Blondtsje</rdfs:label>
+        <rdfs:label xml:lang="de">Blondine</rdfs:label>
+        <rdfs:label xml:lang="en">blonde girl</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -899,6 +1148,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:helps rdf:resource="http://example.org/verhalenbank/priester"/>
         <rdfs:label xml:lang="nl">brutale jongen</rdfs:label>
+        <rdfs:label xml:lang="fy">brutale jonge</rdfs:label>
+        <rdfs:label xml:lang="de">frecher Junge</rdfs:label>
+        <rdfs:label xml:lang="en">cheeky boy</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -908,6 +1160,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/de_Rijt_in_Luiksgestel">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
         <rdfs:label xml:lang="nl">de Rijt in Luiksgestel</rdfs:label>
+        <rdfs:label xml:lang="fy">de Rijt yn Luiksgestel</rdfs:label>
+        <rdfs:label xml:lang="de">die Rijt in Luiksgestel</rdfs:label>
+        <rdfs:label xml:lang="en">the Rijt in Luiksgestel</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -918,6 +1173,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:hasEmotion rdf:resource="http://example.org/verhalenbank/angst"/>
         <rdfs:label xml:lang="nl">de grootste kerels</rdfs:label>
+        <rdfs:label xml:lang="fy">de grutste keardels</rdfs:label>
+        <rdfs:label xml:lang="de">die grössten Kerle</rdfs:label>
+        <rdfs:label xml:lang="en">the biggest men</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -927,6 +1185,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/de_molenkolk_in_Steenderen">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
         <rdfs:label xml:lang="nl">de molenkolk in Steenderen</rdfs:label>
+        <rdfs:label xml:lang="fy">de mollepoat yn Steenderen</rdfs:label>
+        <rdfs:label xml:lang="de">der Mühlenkolk in Steenderen</rdfs:label>
+        <rdfs:label xml:lang="en">the mill pool in Steenderen</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -936,6 +1197,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/de_plek_waar_de_draak_was_verslagen">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
         <rdfs:label xml:lang="nl">de plek waar de draak was verslagen</rdfs:label>
+        <rdfs:label xml:lang="fy">it plak wêr't de draak ferslein waard</rdfs:label>
+        <rdfs:label xml:lang="de">der Ort, an dem der Drache besiegt wurde</rdfs:label>
+        <rdfs:label xml:lang="en">the place where the dragon was defeated</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -945,6 +1209,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/draak">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <rdfs:label xml:lang="nl">draak</rdfs:label>
+        <rdfs:label xml:lang="fy">draak</rdfs:label>
+        <rdfs:label xml:lang="de">Drache</rdfs:label>
+        <rdfs:label xml:lang="en">dragon</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -954,6 +1221,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/een_heelen_hoop_geld">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
         <rdfs:label xml:lang="nl">een heelen hoop geld</rdfs:label>
+        <rdfs:label xml:lang="fy">in hiel soad jild</rdfs:label>
+        <rdfs:label xml:lang="de">ein Haufen Geld</rdfs:label>
+        <rdfs:label xml:lang="en">a whole lot of money</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -964,6 +1234,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:findsObject rdf:resource="http://example.org/verhalenbank/zeef"/>
         <rdfs:label xml:lang="nl">een van de paardenbezitters</rdfs:label>
+        <rdfs:label xml:lang="fy">ien fan de hynste-eigners</rdfs:label>
+        <rdfs:label xml:lang="de">einer der Pferdebesitzer</rdfs:label>
+        <rdfs:label xml:lang="en">one of the horse owners</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -974,6 +1247,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:appearsIn rdf:resource="http://example.org/verhalenbank/Item_49976"/>
         <rdfs:label xml:lang="nl">geesten</rdfs:label>
+        <rdfs:label xml:lang="fy">geasten</rdfs:label>
+        <rdfs:label xml:lang="de">Geister</rdfs:label>
+        <rdfs:label xml:lang="en">ghosts</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -984,6 +1260,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:givesObject rdf:resource="http://example.org/verhalenbank/konijntje"/>
         <rdfs:label xml:lang="nl">gelaarsde kat</rdfs:label>
+        <rdfs:label xml:lang="fy">kat mei learzens oan</rdfs:label>
+        <rdfs:label xml:lang="de">Gestiefelter Kater</rdfs:label>
+        <rdfs:label xml:lang="en">Puss in Boots</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -994,6 +1273,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Action"/>
         <vb:hasTime rdf:resource="http://example.org/verhalenbank/volgende_dag"/>
         <rdfs:label xml:lang="nl">ging</rdfs:label>
+        <rdfs:label xml:lang="fy">gong</rdfs:label>
+        <rdfs:label xml:lang="de">ging</rdfs:label>
+        <rdfs:label xml:lang="en">went</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1003,6 +1285,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/gloeiende_grenssteen">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
         <rdfs:label xml:lang="nl">gloeiende grenssteen</rdfs:label>
+        <rdfs:label xml:lang="fy">brânende/gloeiende/gleone grinsstien</rdfs:label>
+        <rdfs:label xml:lang="de">glühender Grensstein</rdfs:label>
+        <rdfs:label xml:lang="en">glowing boundary stone</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1012,6 +1297,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/gloeiende_sleutel">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
         <rdfs:label xml:lang="nl">gloeiende sleutel</rdfs:label>
+        <rdfs:label xml:lang="fy">gleone kaai</rdfs:label>
+        <rdfs:label xml:lang="de">glühender Schlüssel</rdfs:label>
+        <rdfs:label xml:lang="en">glowing key</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1021,6 +1309,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/gouden_koets">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
         <rdfs:label xml:lang="nl">gouden koets</rdfs:label>
+        <rdfs:label xml:lang="fy">gouden koets</rdfs:label>
+        <rdfs:label xml:lang="de">goldene Kutsche</rdfs:label>
+        <rdfs:label xml:lang="en">golden carriage</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1030,6 +1321,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/herberg_de_Zwarte_Hond">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
         <rdfs:label xml:lang="nl">herberg &apos;de Zwarte Hond&apos;</rdfs:label>
+        <rdfs:label xml:lang="fy">herberch 'de Swarte Hûn'</rdfs:label>
+        <rdfs:label xml:lang="de">Herberge 'der schwarze Hund'</rdfs:label>
+        <rdfs:label xml:lang="en">The Black Dog Inn</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1040,6 +1334,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:hasEmotion rdf:resource="http://example.org/verhalenbank/verbazing"/>
         <rdfs:label xml:lang="nl">herder</rdfs:label>
+        <rdfs:label xml:lang="fy">harder</rdfs:label>
+        <rdfs:label xml:lang="de">Hirte</rdfs:label>
+        <rdfs:label xml:lang="en">shepherd</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1050,6 +1347,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:hasLocation rdf:resource="http://example.org/verhalenbank/de_molenkolk_in_Steenderen"/>
         <rdfs:label xml:lang="nl">het gedrocht</rdfs:label>
+        <rdfs:label xml:lang="fy">it gedrocht</rdfs:label>
+        <rdfs:label xml:lang="de">das Ungeheuer</rdfs:label>
+        <rdfs:label xml:lang="en">the monster</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1060,6 +1360,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:executesAction xml:lang="nl">met ketting rammelen</vb:executesAction>
         <rdfs:label xml:lang="nl">honden</rdfs:label>
+        <rdfs:label xml:lang="fy">hûnen</rdfs:label>
+        <rdfs:label xml:lang="de">Hunde</rdfs:label>
+        <rdfs:label xml:lang="en">dogs</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1070,6 +1373,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:usesObject rdf:resource="http://example.org/verhalenbank/random_number_generator"/>
         <rdfs:label xml:lang="nl">hoogleraar Bierman</rdfs:label>
+        <rdfs:label xml:lang="fy">heechlerer Bierman</rdfs:label>
+        <rdfs:label xml:lang="de">Professor Bierman</rdfs:label>
+        <rdfs:label xml:lang="en">Professor Bierman</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1080,6 +1386,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:hasDescription xml:lang="nl">een soort draak in de vorm van een paard</vb:hasDescription>
         <rdfs:label xml:lang="nl">ijzeren veulen</rdfs:label>
+        <rdfs:label xml:lang="fy">izeren fôle</rdfs:label>
+        <rdfs:label xml:lang="de">eisernes Fohlen</rdfs:label>
+        <rdfs:label xml:lang="en">iron foal</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1090,6 +1399,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:usesObject rdf:resource="http://example.org/verhalenbank/spiegel"/>
         <rdfs:label xml:lang="nl">jongen</rdfs:label>
+        <rdfs:label xml:lang="fy">jonge</rdfs:label>
+        <rdfs:label xml:lang="de">Junge</rdfs:label>
+        <rdfs:label xml:lang="en">boy</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1103,6 +1415,9 @@
         <vb:executesAction xml:lang="nl">werd steeds zwaarder en veranderde in een oude vrouw</vb:executesAction>
         <vb:hasDescription xml:lang="nl">spook</vb:hasDescription>
         <rdfs:label xml:lang="nl">kat</rdfs:label>
+        <rdfs:label xml:lang="fy">kat</rdfs:label>
+        <rdfs:label xml:lang="de">Katze</rdfs:label>
+        <rdfs:label xml:lang="en">cat</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1112,6 +1427,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/konijntje">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
         <rdfs:label xml:lang="nl">konijntje</rdfs:label>
+        <rdfs:label xml:lang="fy">knyntsje</rdfs:label>
+        <rdfs:label xml:lang="de">Kaninchen</rdfs:label>
+        <rdfs:label xml:lang="en">rabbit</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1122,6 +1440,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:executesAction xml:lang="nl">Stupiditeit en absurde onwetendheid van Seppe</vb:executesAction>
         <rdfs:label xml:lang="nl">meester Jan</rdfs:label>
+        <rdfs:label xml:lang="fy">master Jan</rdfs:label>
+        <rdfs:label xml:lang="de">meester Jan</rdfs:label>
+        <rdfs:label xml:lang="en">Master Jan</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1132,6 +1453,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:usesObject rdf:resource="http://example.org/verhalenbank/spiegel"/>
         <rdfs:label xml:lang="nl">men</rdfs:label>
+        <rdfs:label xml:lang="fy">minsken</rdfs:label>
+        <rdfs:label xml:lang="de">Menschen</rdfs:label>
+        <rdfs:label xml:lang="en">people</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1142,6 +1466,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:executesAction xml:lang="nl">kan hard waaien</vb:executesAction>
         <rdfs:label xml:lang="nl">mens</rdfs:label>
+        <rdfs:label xml:lang="fy">mins</rdfs:label>
+        <rdfs:label xml:lang="de">Mensch</rdfs:label>
+        <rdfs:label xml:lang="en">person</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1152,6 +1479,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:executesAction xml:lang="nl">knabbelt de galg af</vb:executesAction>
         <rdfs:label xml:lang="nl">mol</rdfs:label>
+        <rdfs:label xml:lang="fy">mol</rdfs:label>
+        <rdfs:label xml:lang="de">Maulwurf</rdfs:label>
+        <rdfs:label xml:lang="en">mole</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1161,6 +1491,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/muis">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <rdfs:label xml:lang="nl">muis</rdfs:label>
+        <rdfs:label xml:lang="fy">mûs</rdfs:label>
+        <rdfs:label xml:lang="de">Maus</rdfs:label>
+        <rdfs:label xml:lang="en">mouse</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1171,6 +1504,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:livesIn rdf:resource="http://example.org/verhalenbank/Bennekom"/>
         <rdfs:label xml:lang="nl">notaris</rdfs:label>
+        <rdfs:label xml:lang="fy">notaris</rdfs:label>
+        <rdfs:label xml:lang="de">Notar</rdfs:label>
+        <rdfs:label xml:lang="en">notary</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1180,6 +1516,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/onderwaterland">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Location"/>
         <rdfs:label xml:lang="nl">onderwaterland</rdfs:label>
+        <rdfs:label xml:lang="fy">ûnderwetterlân</rdfs:label>
+        <rdfs:label xml:lang="de">Unterwasserland</rdfs:label>
+        <rdfs:label xml:lang="en">underwater land</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1189,6 +1528,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/priester">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <rdfs:label xml:lang="nl">priester</rdfs:label>
+        <rdfs:label xml:lang="fy">pryster</rdfs:label>
+        <rdfs:label xml:lang="de">Priester</rdfs:label>
+        <rdfs:label xml:lang="en">priest</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1198,6 +1540,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/random_number_generator">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
         <rdfs:label xml:lang="nl">random-number-generator</rdfs:label>
+        <rdfs:label xml:lang="fy">ien-of-oar-nûmer-generator/samar-in-nûmer-generator</rdfs:label>
+        <rdfs:label xml:lang="de">Zufallszahlengenerator</rdfs:label>
+        <rdfs:label xml:lang="en">random-number generator</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1208,6 +1553,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:helps rdf:resource="http://example.org/verhalenbank/Henderikus_Hut"/>
         <rdfs:label xml:lang="nl">reebok</rdfs:label>
+        <rdfs:label xml:lang="fy">reebok</rdfs:label>
+        <rdfs:label xml:lang="de">Rehbock</rdfs:label>
+        <rdfs:label xml:lang="en">roebuck</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1217,6 +1565,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/rond_het_jaar_900">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Temporal"/>
         <rdfs:label xml:lang="nl">rond het jaar 900</rdfs:label>
+        <rdfs:label xml:lang="fy">om it jier 900</rdfs:label>
+        <rdfs:label xml:lang="de">um das Jahr 900</rdfs:label>
+        <rdfs:label xml:lang="en">around the year 900</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1227,6 +1578,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:findsObject rdf:resource="http://example.org/verhalenbank/schrift_van_Mari_t"/>
         <rdfs:label xml:lang="nl">schoolmeester</rdfs:label>
+        <rdfs:label xml:lang="fy">skoalmaster</rdfs:label>
+        <rdfs:label xml:lang="de">Schulmeister</rdfs:label>
+        <rdfs:label xml:lang="en">schoolmaster</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1236,6 +1590,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/schrift_van_Mari_t">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
         <rdfs:label xml:lang="nl">schrift van Mariët</rdfs:label>
+        <rdfs:label xml:lang="fy">skrift fan Mariët</rdfs:label>
+        <rdfs:label xml:lang="de">Heft von Mariët</rdfs:label>
+        <rdfs:label xml:lang="en">notebook of Mariët</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1246,6 +1603,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:executesAction xml:lang="nl">maakt drie kruisen</vb:executesAction>
         <rdfs:label xml:lang="nl">snaak</rdfs:label>
+        <rdfs:label xml:lang="fy">snaak/biisjager</rdfs:label>
+        <rdfs:label xml:lang="de">Bursche/Schelm</rdfs:label>
+        <rdfs:label xml:lang="en">rascal</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1255,6 +1615,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/spiegel">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
         <rdfs:label xml:lang="nl">spiegel</rdfs:label>
+        <rdfs:label xml:lang="fy">spegel</rdfs:label>
+        <rdfs:label xml:lang="de">Spiegel</rdfs:label>
+        <rdfs:label xml:lang="en">mirror</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1264,6 +1627,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/spoel">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
         <rdfs:label xml:lang="nl">spoel</rdfs:label>
+        <rdfs:label xml:lang="fy">spoel</rdfs:label>
+        <rdfs:label xml:lang="de">Spule</rdfs:label>
+        <rdfs:label xml:lang="en">spool</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1274,6 +1640,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:transformsInto rdf:resource="http://example.org/verhalenbank/muis"/>
         <rdfs:label xml:lang="nl">tovenaar</rdfs:label>
+        <rdfs:label xml:lang="fy">tovener/tsjoender</rdfs:label>
+        <rdfs:label xml:lang="de">Zauberer</rdfs:label>
+        <rdfs:label xml:lang="en">wizard</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1284,6 +1653,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:discoversLocation rdf:resource="http://example.org/verhalenbank/onderwaterland"/>
         <rdfs:label xml:lang="nl">tweeling</rdfs:label>
+        <rdfs:label xml:lang="fy">twaling</rdfs:label>
+        <rdfs:label xml:lang="de">Zwilling</rdfs:label>
+        <rdfs:label xml:lang="en">twins</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1293,6 +1665,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/verbazing">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Emotion"/>
         <rdfs:label xml:lang="nl">verbazing</rdfs:label>
+        <rdfs:label xml:lang="fy">fernuvering</rdfs:label>
+        <rdfs:label xml:lang="de">Erstaunen</rdfs:label>
+        <rdfs:label xml:lang="en">astonishment</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1302,6 +1677,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/verschrikte">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Emotion"/>
         <rdfs:label xml:lang="nl">verschrikte</rdfs:label>
+        <rdfs:label xml:lang="fy">ferskrikt</rdfs:label>
+        <rdfs:label xml:lang="de">erschrocken</rdfs:label>
+        <rdfs:label xml:lang="en">frightened</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1311,6 +1689,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/volgende_dag">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Temporal"/>
         <rdfs:label xml:lang="nl">volgende dag</rdfs:label>
+        <rdfs:label xml:lang="fy">folgjende dei</rdfs:label>
+        <rdfs:label xml:lang="de">am nächsten Tag</rdfs:label>
+        <rdfs:label xml:lang="en">the following day</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1321,6 +1702,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:livesIn rdf:resource="http://example.org/verhalenbank/bale"/>
         <rdfs:label xml:lang="nl">vrome vrouw</rdfs:label>
+        <rdfs:label xml:lang="fy">fromme frou</rdfs:label>
+        <rdfs:label xml:lang="de">fromme Frau</rdfs:label>
+        <rdfs:label xml:lang="en">pious woman</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1331,6 +1715,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:usesObject rdf:resource="http://example.org/verhalenbank/zeef"/>
         <rdfs:label xml:lang="nl">vrouw</rdfs:label>
+        <rdfs:label xml:lang="fy">frou</rdfs:label>
+        <rdfs:label xml:lang="de">Frau</rdfs:label>
+        <rdfs:label xml:lang="en">woman</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1341,6 +1728,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:findsObject rdf:resource="http://example.org/verhalenbank/een_heelen_hoop_geld"/>
         <rdfs:label xml:lang="nl">vrouw van de notaris</rdfs:label>
+        <rdfs:label xml:lang="fy">frou fan 'e notaris</rdfs:label>
+        <rdfs:label xml:lang="de">Frau des Notars</rdfs:label>
+        <rdfs:label xml:lang="en">notary's wife</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1351,6 +1741,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:hasLocation rdf:resource="http://example.org/verhalenbank/Averput"/>
         <rdfs:label xml:lang="nl">woeste ridder</rdfs:label>
+        <rdfs:label xml:lang="fy">woeste ridder</rdfs:label>
+        <rdfs:label xml:lang="de">wilde Ritter</rdfs:label>
+        <rdfs:label xml:lang="en">wild knight</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1361,6 +1754,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Action"/>
         <vb:hasLocation rdf:resource="http://example.org/verhalenbank/herberg_de_Zwarte_Hond"/>
         <rdfs:label xml:lang="nl">wordt verteld</rdfs:label>
+        <rdfs:label xml:lang="fy">wurdt ferteld</rdfs:label>
+        <rdfs:label xml:lang="de">wird erzählt</rdfs:label>
+        <rdfs:label xml:lang="en">is told</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1370,6 +1766,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/zeef">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Object"/>
         <rdfs:label xml:lang="nl">zeef</rdfs:label>
+        <rdfs:label xml:lang="fy">sieve</rdfs:label>
+        <rdfs:label xml:lang="de">Sieb</rdfs:label>
+        <rdfs:label xml:lang="en">sieve</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1380,6 +1779,9 @@
         <rdf:type rdf:resource="http://example.org/verhalenbank/Character"/>
         <vb:usesObject rdf:resource="http://example.org/verhalenbank/gloeiende_sleutel"/>
         <rdfs:label xml:lang="nl">zwarte hond</rdfs:label>
+        <rdfs:label xml:lang="fy">swarte hûn</rdfs:label>
+        <rdfs:label xml:lang="de">schwarzer Hund</rdfs:label>
+        <rdfs:label xml:lang="en">black dog</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1389,6 +1791,9 @@
     <owl:NamedIndividual rdf:about="http://example.org/verhalenbank/21_september_1659">
         <rdf:type rdf:resource="http://example.org/verhalenbank/Temporal"/>
         <rdfs:label xml:lang="nl">21 september 1659</rdfs:label>
+        <rdfs:label xml:lang="fy">21 septimber 1659</rdfs:label>
+        <rdfs:label xml:lang="de">21 september 1659</rdfs:label>
+        <rdfs:label xml:lang="en">september 21, 1659</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
