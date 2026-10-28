@@ -1,19 +1,17 @@
 Predicate (URI/Naam),Domain (Subject Class),Range (Object Class / Datatype),Uitleg / Richtlijn
-defeats,Character (of Hero),Character (of Villain),Wie verslaat of misleidt wie in het verhaal?
-appearsIn,Character,Story,Welk figuur komt voor in het verhaal?
-usesObject,Character,Object,Welk (magisch) voorwerp gebruikt een personage?
-hasLocation,Story / Character / Action,Location,Waar speelt het verhaal zich af?
-hasMotif,Story,xsd:string,Thompson Motif Index code (bijv. E235.2).
-hasTaleType,Story,xsd:string,AT / ATU code (bijv. ATU 0366).
-hasSubGenre,Story,xsd:string,"Bijv. sprookje, sage, mop."
-executesAction,Character,xsd:string,"Bijvoorbeeld: loopt, werkt, behekst"
-livesIn,Character,Location,"Groningen, "
-helps,Character,character (of Villain),
-findsObject,Character,Object,
-givesObject,Character,Object,
-transformsInto,Character,Character (of Villain),
-discoversLocation,Character,Location,
-hasEmotion,Character,Emotion,"sad, happy, angry"
-hasDescription,Character/Location/Item/Object,xsd:string ,"is loud, has many (...) "
-hasTime,Story / Action,Temporal ,"yesterday, tomorrow"
-hasEnding,Story,xsd:string,
+appearsIn,Character,Story,Which character appears in the story?
+defeats,Character (or Hero),Character (of Villain),Who defeated who in the story?
+discoversLocation,Character,Location,Which location is being discovered by a character?
+executesAction,Character,xsd:string,"A character executes an action, for example: walking, drinking"
+findsObject,Character,Object,A character finds an object
+givesObject,Character,Object,A character gives an object to someone
+hasDescription,Character/Location/Item/Object,xsd:string ,"A character, location, item or object has a description, example: is loud, has many (...) "
+hasEmotion,Character,Emotion,"A character has an emotion, example: sad, happy, angry"
+hasEnding,Story,xsd:string,A story has an ending
+hasLocation,Story / Character / Action,Location,"The location of the story, for example a town"
+hasSubGenre,Story,xsd:string,"The story has a subgenre, example: sprookje, sage, mop."
+hasTime,Story / Action,Temporal ,"The story or an action has a time, example: yesterday, tomorrow"
+helps,Character,character (or Villain),A character helps someone
+livesIn,Character,Location,"A character lives in a place, example: Groningen"
+transformsInto,Character,Character (or Villain),A character transforms into someone
+usesObject,Character,Object,"A character uses a magical object, example: broom"
